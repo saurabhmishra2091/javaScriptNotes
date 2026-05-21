@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Notes 2026</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#eef2f7;
+      color:#222;
+      transition:0.4s;
+    }
+
+    /* Navbar */
+
+    .navbar{
+      background:#0d47a1;
+      padding:18px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar h1{
+      color:white;
+      font-size:30px;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:20px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:25px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#ffeb3b;
+    }
+
+    /* Theme Button */
+
+    #themeBtn{
+      padding:10px 18px;
+      border:none;
+      border-radius:8px;
+      background:white;
+      color:#0d47a1;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    #themeBtn:hover{
+      background:#ffeb3b;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:30px;
+    }
+
+    .main-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .main-title h1{
+      font-size:42px;
+      color:#0d47a1;
+      margin-bottom:10px;
+    }
+
+    .main-title p{
+      color:#555;
+      font-size:18px;
+    }
+
+    .date-section{
+      background:#ffffff;
+      margin-bottom:35px;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.4s;
+    }
+
+    .date-header{
+      background:#0d47a1;
+      color:white;
+      padding:18px 25px;
+      font-size:26px;
+      font-weight:bold;
+    }
+
+    .content{
+      padding:25px;
+    }
+
+    h2{
+      color:#0d47a1;
+      margin-bottom:15px;
+      margin-top:20px;
+    }
+
+    pre{
+      background:#1e1e1e;
+      color:#00ff88;
+      padding:18px;
+      border-radius:8px;
+      overflow-x:auto;
+      margin:15px 0;
+      line-height:1.6;
+      transition:0.4s;
+    }
+
+    ul{
+      margin-left:20px;
+      margin-top:10px;
+    }
+
+    li{
+      margin-bottom:12px;
+      line-height:1.6;
+    }
+
+    .highlight{
+      color:#d32f2f;
+      font-weight:bold;
+    }
+
+    .note{
+      background:#fff3cd;
+      border-left:6px solid #ff9800;
+      padding:15px;
+      margin-top:15px;
+      border-radius:6px;
+    }
+
+    /* Dark Mode */
+
+    body.dark{
+      background:#121212;
+      color:#f5f5f5;
+    }
+
+    body.dark .date-section{
+      background:#1e1e1e;
+      color:white;
+    }
+
+    body.dark .content{
+      color:#f5f5f5;
+    }
+
+    body.dark pre{
+      background:#000;
+      color:#00ff88;
+    }
+
+    body.dark .main-title h1,
+    body.dark h2{
+      color:#4da3ff;
+    }
+
+    body.dark .main-title p{
+      color:#ccc;
+    }
+
+    body.dark .note{
+      background:#3a2d00;
+      color:white;
+    }
+
+    body.dark #themeBtn{
+      background:#333;
+      color:white;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+
+    <h1>JS Notes</h1>
+
+    <div class="nav-right">
+
+      <ul class="nav-links">
+        <li><a href="#notes">Class Notes</a></li>
+        <li><a href="#interview">Interview Questions</a></li>
+      </ul>
+
+      <button id="themeBtn">🌙 Dark</button>
+
+    </div>
+
+  </nav>
+
+
+  <div class="container">
+
+    <!-- Main Title -->
+
+    <div class="main-title" id="notes">
+      <h1>JavaScript Class Notes</h1>
+      <p>Date Wise Notes Collection - 2026</p>
+    </div>
+
+
+    <!-- 12/05/2026 -->
+
+    <div class="date-section">
+
+      <div class="date-header">
+        12/05/2026
+      </div>
+
+      <div class="content">
+
+        <h2>Hello World Program</h2>
+
+        <pre>
+console.log("Hello World")
+        </pre>
+
+        <ul>
+          <li>console.log() is used to print output on console.</li>
+          <li>This is the first JavaScript program.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- 14/05/2026 -->
+
+    <div class="date-section">
+
+      <div class="date-header">
+        14/05/2026
+      </div>
+
+      <div class="content">
+
+        <h2>Variable Declaration</h2>
+
+        <pre>
+var x;
+let y;
+        </pre>
+
+        <ul>
+          <li>Declaration means creating variable without value.</li>
+        </ul>
+
+        <h2>Declaration & Initialization</h2>
+
+        <pre>
+var a = 10;
+let b = 3;
+const c = 10;
+        </pre>
+
+        <ul>
+          <li>Initialization means assigning value to variable.</li>
+          <li>JavaScript automatically detects datatype.</li>
+        </ul>
+
+        <h2>let Keyword</h2>
+
+        <pre>
+let xy = true;
+xy = false;
+
+console.log(xy);
+        </pre>
+
+        <ul>
+          <li>let can be reassigned but cannot be redeclared.</li>
+        </ul>
+
+        <h2>var Keyword</h2>
+
+        <pre>
+var yx = 'saurabh';
+var yx = true;
+yx = false;
+        </pre>
+
+        <ul>
+          <li>var can be reassigned and redeclared.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- 16/05/2026 -->
+
+    <div class="date-section">
+
+      <div class="date-header">
+        16/05/2026
+      </div>
+
+      <div class="content">
+
+        <h2>Arithmetic Operators</h2>
+
+        <pre>
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(2%2);
+        </pre>
+
+        <h2>Comparison Operators</h2>
+
+        <pre>
+const a = 10;
+const b = '10';
+
+console.log(a==b)
+console.log(a===b)
+        </pre>
+
+        <ul>
+          <li>== compares only value.</li>
+          <li>=== compares value and datatype.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- 19/05/2026 -->
+
+    <div class="date-section">
+
+      <div class="date-header">
+        19/05/2026
+      </div>
+
+      <div class="content">
+
+        <h2>Student Grade Calculator</h2>
+
+        <pre>
+const m = Number(prompt("enter your math marks"))
+const h = Number(prompt("enter your Hindi marks"))
+const ph = Number(prompt("enter your Physics marks"))
+const c = Number(prompt("enter your chemistry marks"))
+const e = Number(prompt("enter your english marks"))
+
+const p = Number(m+h+ph+c+e)/5
+        </pre>
+
+        <ul>
+          <li>prompt() takes user input.</li>
+          <li>Number() converts string into number.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- 21/05/2026 -->
+
+    <div class="date-section">
+
+      <div class="date-header">
+        21/05/2026
+      </div>
+
+      <div class="content">
+
+        <h2>Array Example</h2>
+
+        <pre>
+const arr = [1,2,3,4,5,true,"Saurabh","Mishra",[6,7],{name:"Jagannath"}]
+        </pre>
+
+        <ul>
+          <li>Array can store multiple datatypes.</li>
+        </ul>
+
+        <h2>Object Example</h2>
+
+        <pre>
+const obj = {
+   name:"saurabh",
+   age:21,
+   isActive:true
+}
+        </pre>
+
+        <ul>
+          <li>Object stores data in key:value pair.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- Interview Questions -->
+
+    <section id="interview" class="date-section">
+
+      <div class="date-header">
+        Interview Questions
+      </div>
+
+      <div class="content">
+
+        <h2>1. Native App vs Progressive Web App</h2>
+
+        <ul>
+          <li><b>Native App</b> → Installed from Play Store/App Store.</li>
+          <li><b>PWA</b> → Website behaves like mobile app.</li>
+        </ul>
+
+        <h2>2. Difference Between var, let and const</h2>
+
+        <pre>
+var a = 10;
+let b = 20;
+const c = 30;
+        </pre>
+
+        <ul>
+          <li>var → redeclare and reassign allowed.</li>
+          <li>let → reassign allowed but redeclare not allowed.</li>
+          <li>const → cannot redeclare and cannot reassign.</li>
+        </ul>
+
+        <h2>3. Reassignment vs Redeclaration</h2>
+
+        <ul>
+          <li>Reassignment → changing variable value.</li>
+          <li>Redeclaration → creating same variable again.</li>
+        </ul>
+
+        <h2>4. prompt() and alert()</h2>
+
+        <ul>
+          <li>prompt() gives string value.</li>
+          <li>Use Number() or parseInt() for conversion.</li>
+        </ul>
+
+        <h2>5. Object vs Array</h2>
+
+        <ul>
+          <li>Multiple datatype → Object {}</li>
+          <li>Same datatype → Array []</li>
+        </ul>
+
+        <h2>6. What is Dot Notation?</h2>
+
+        <pre>
+console.log(obj.name)
+        </pre>
+
+        <ul>
+          <li>Used to access object properties.</li>
+        </ul>
+
+        <h2>7. Array is also an Object</h2>
+
+        <ul>
+          <li>Array has index(key) and element(value).</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- JavaScript -->
+
+  <script>
+
+    const themeBtn = document.getElementById("themeBtn");
+
+    themeBtn.addEventListener("click", () => {
+
+      document.body.classList.toggle("dark");
+
+      if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML = "☀️ Light";
+      }
+      else{
+        themeBtn.innerHTML = "🌙 Dark";
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

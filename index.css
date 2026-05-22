@@ -120,7 +120,11 @@
         margin-top: 25px;
         margin-bottom: 15px;
       }
-
+      h4{
+        color: lightseagreen;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
       pre {
         background: #1e1e1e;
         color: #00ff88;

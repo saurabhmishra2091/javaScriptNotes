@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Notes 2026</title>
-
-    
   </head>
   <body>
     <!-- ================= NAVBAR ================= -->
@@ -39,7 +37,7 @@
           <h2>Hello World Program</h2>
 
           <pre>
-console.log("Hello World")
+          console.log("Hello World")
         </pre
           >
 
@@ -60,8 +58,8 @@ console.log("Hello World")
           <h2>Variable Declaration</h2>
 
           <pre>
-var x;
-let y;
+          var x;
+          let y;
         </pre
           >
 
@@ -72,9 +70,9 @@ let y;
           <h2>Declaration & Initialization</h2>
 
           <pre>
-var a = 10;
-let b = 3;
-const c = 10;
+          var a = 10;
+          let b = 3;
+          const c = 10;
         </pre
           >
 
@@ -94,11 +92,11 @@ const c = 10;
           <h2>Arithmetic Operators</h2>
 
           <pre>
-console.log(2+2);
-console.log(2-2);
-console.log(2*2);
-console.log(2/2);
-console.log(2%2);
+          console.log(2+2);
+          console.log(2-2);
+          console.log(2*2);
+          console.log(2/2);
+          console.log(2%2);
         </pre
           >
 
@@ -113,8 +111,8 @@ console.log(2%2);
           <h2>Comparison Operators</h2>
 
           <pre>
-console.log(a==b)
-console.log(a===b)
+          console.log(a==b)
+          console.log(a===b)
         </pre
           >
 
@@ -134,18 +132,18 @@ console.log(a===b)
           <h2>Student Grade Calculator</h2>
 
           <pre>
-const m = Number(prompt("Enter math marks"))
-const h = Number(prompt("Enter Hindi marks"))
-const ph = Number(prompt("Enter Physics marks"))
+          const m = Number(prompt("Enter math marks"))
+          const h = Number(prompt("Enter Hindi marks"))
+          const ph = Number(prompt("Enter Physics marks"))
 
-const p = (m+h+ph)/3
+          const p = (m+h+ph)/3
 
-if(p >=95){
-   console.log("Grade A")
-}
-else{
-   console.log("Fail")
-}
+          if(p >=95){
+             console.log("Grade A")
+          }
+          else{
+             console.log("Fail")
+          }
         </pre
           >
         </div>
@@ -160,22 +158,53 @@ else{
           <h2>Array Example</h2>
 
           <pre>
-const arr = [1,2,3,4,5,true,"Saurabh"]
+          const arr = [1,2,3,4,5,true,"Saurabh"]
         </pre
           >
-
           <ul>
             <li>Array stores multiple values.</li>
             <li>Array index starts from 0.</li>
           </ul>
+          <h2>To print even or odd index</h2>
+          <pre>
+          console.log(arr[((arr.length-1)/2)])//                      O/P:- 4.5
 
+          console.log(arr[parseInt((arr.length-1)/2)]) //             O/P :- 4
+
+          </pre>
+          <ul>
+            <li>parseInt is used to give the value from float to int</li>
+          </ul>
+          <h2>Object</h2>
+          <ul>
+            <li>In an object data is stored in the form of key and value</li>
+          </ul>
+          <pre>
+        const obj = {
+            name:"saurabh",//key:value
+            age:21,//by using , we can separate key value pair 
+            isActive:true,
+            address: {
+            vill:"Ratge",
+            dist:"Shahdol",
+            pin:484771
+            },
+            hobbies:["booksreading","cricket"]
+        }
+          </pre>
+          <h4>How to access object</h4>
+          <ul>
+            <li>To access name :- console.log(obj.name)</li>
+            <li>To access pincode :- console.log(obj.address.pin)</li>
+            <li>Second way to access :- console.log(obj['address']['pin'])</li>
+          </ul>
           <h2>Object Example</h2>
 
           <pre>
-const obj = {
-   name:"saurabh",
-   age:21
-}
+          const obj = {
+             name:"saurabh",
+             age:21
+          }
         </pre
           >
         </div>
@@ -197,9 +226,9 @@ const obj = {
           <h2>2. Difference Between var, let and const</h2>
 
           <pre>
-var a = 10;
-let b = 20;
-const c = 30;
+          var a = 10;
+          let b = 20;
+          const c = 30;
         </pre
           >
 
@@ -212,11 +241,11 @@ const c = 30;
           <h2>3. Reassignment vs Redeclaration</h2>
 
           <pre>
-let x = 10;
-x = 20;
+          let x = 10;
+          x = 20;
 
-let y = 30;
-let y = 40;
+          let y = 30;
+          let y = 40;
         </pre
           >
 
@@ -242,7 +271,7 @@ let y = 40;
           <h2>6. What is Dot Notation?</h2>
 
           <pre>
-console.log(obj.name)
+          console.log(obj.name)
         </pre
           >
 
@@ -253,7 +282,7 @@ console.log(obj.name)
           <h2>7. Array is also an Object</h2>
 
           <pre>
-console.log(typeof arr)
+          console.log(typeof arr)
         </pre
           >
 

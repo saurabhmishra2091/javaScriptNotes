@@ -1,0 +1,253 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #eef2f7;
+        color: #222;
+        transition: 0.4s;
+      }
+
+      /* ================= NAVBAR ================= */
+
+      .navbar {
+        background: #0d47a1;
+        padding: 18px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .logo {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ffeb3b;
+      }
+
+      #themeBtn {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        background: white;
+        color: #0d47a1;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #themeBtn:hover {
+        background: #ffeb3b;
+      }
+
+      /* ================= CONTAINER ================= */
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 30px 20px;
+      }
+
+      .main-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .main-title h1 {
+        font-size: 42px;
+        color: #0d47a1;
+        margin-bottom: 10px;
+      }
+
+      .main-title p {
+        color: #555;
+        font-size: 18px;
+      }
+
+      /* ================= NOTES SECTION ================= */
+
+      .date-section {
+        background: white;
+        margin-bottom: 35px;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: 0.4s;
+      }
+
+      .date-header {
+        background: #0d47a1;
+        color: white;
+        padding: 18px 25px;
+        font-size: 26px;
+        font-weight: bold;
+      }
+
+      .content {
+        padding: 25px;
+      }
+
+      h2 {
+        color: #0d47a1;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+
+      pre {
+        background: #1e1e1e;
+        color: #00ff88;
+        padding: 18px;
+        border-radius: 10px;
+        overflow-x: auto;
+        margin: 15px 0;
+        line-height: 1.6;
+        font-size: 15px;
+      }
+
+      ul {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      li {
+        margin-bottom: 12px;
+        line-height: 1.7;
+      }
+
+      .note {
+        background: #fff3cd;
+        border-left: 6px solid #ff9800;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 6px;
+      }
+
+      /* ================= DARK MODE ================= */
+
+      body.dark {
+        background: #121212;
+        color: #f5f5f5;
+      }
+
+      body.dark .date-section {
+        background: #1e1e1e;
+        color: white;
+      }
+
+      body.dark .content {
+        color: #f5f5f5;
+      }
+
+      body.dark pre {
+        background: #000;
+        color: #00ff88;
+      }
+
+      body.dark .main-title h1,
+      body.dark h2 {
+        color: #4da3ff;
+      }
+
+      body.dark .main-title p {
+        color: #ccc;
+      }
+
+      body.dark .note {
+        background: #3a2d00;
+        color: white;
+      }
+
+      body.dark #themeBtn {
+        background: #333;
+        color: white;
+      }
+
+      /* ================= RESPONSIVE ================= */
+
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 20px;
+        }
+
+        .nav-links {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .logo {
+          font-size: 26px;
+        }
+
+        .main-title h1 {
+          font-size: 32px;
+        }
+
+        .date-header {
+          font-size: 22px;
+        }
+
+        .content {
+          padding: 18px;
+        }
+
+        pre {
+          font-size: 13px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .nav-links {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .nav-links a {
+          font-size: 16px;
+        }
+
+        .main-title h1 {
+          font-size: 28px;
+        }
+
+        .main-title p {
+          font-size: 15px;
+        }
+
+        .date-header {
+          font-size: 20px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+      }

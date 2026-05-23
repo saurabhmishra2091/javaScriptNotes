@@ -209,6 +209,215 @@
           >
         </div>
       </div>
+      <!-- ================= 23/05/2026 ================= -->
+
+<div class="date-section">
+
+  <div class="date-header">
+    23/05/2026
+  </div>
+
+  <div class="content">
+
+    <h2>Reverse Loop in Array</h2>
+
+    <pre>
+for(let i = arr.length; i >= 0; i--){
+   console.log(arr[i])
+}
+
+// Output:
+// undefined 5 4 3 2 1
+    </pre>
+
+    <ul>
+      <li>
+        Array index starts from 0.
+      </li>
+
+      <li>
+        arr.length gives one extra position.
+      </li>
+
+      <li>
+        That's why first output becomes <b>undefined</b>.
+      </li>
+    </ul>
+
+
+
+    <h2>for...of Loop</h2>
+
+    <pre>
+const arr = [1,2,3,4,5]
+
+for(let i of arr){
+   console.log(i)
+}
+    </pre>
+
+    <ul>
+      <li>
+        <b>for...of</b> loop gives values/elements directly.
+      </li>
+
+      <li>
+        Mostly used with arrays and strings.
+      </li>
+    </ul>
+
+
+
+    <pre>
+const arr = ['apple','ball','cat']
+
+for(let i of arr){
+   console.log(arr[i])
+}
+
+// Output:
+// undefined undefined undefined
+    </pre>
+
+    <ul>
+      <li>
+        In for...of loop, <b>i</b> already contains value.
+      </li>
+
+      <li>
+        Here i = "apple", "ball", "cat"
+      </li>
+
+      <li>
+        arr["apple"] does not exist, so output becomes undefined.
+      </li>
+    </ul>
+
+
+
+    <h2>for...in Loop</h2>
+
+    <pre>
+const arr = ['apple','ball','cat']
+
+for(let i in arr){
+
+   console.log(`Hi, my index is ${i} and my value is ${arr[i]}`)
+
+}
+    </pre>
+
+    <ul>
+      <li>
+        <b>for...in</b> loop gives index/key.
+      </li>
+
+      <li>
+        Mostly used for objects.
+      </li>
+
+      <li>
+        Template literals use backticks <b>` `</b>.
+      </li>
+    </ul>
+
+
+
+    <h2>forEach Method</h2>
+
+    <pre>
+const arr = [1,2,3,4,5]
+
+arr.forEach((a,i)=>{
+   console.log(a,i)
+})
+    </pre>
+
+    <ul>
+      <li>
+        forEach() is an array method.
+      </li>
+
+      <li>
+        First parameter gives value.
+      </li>
+
+      <li>
+        Second parameter gives index.
+      </li>
+    </ul>
+
+
+
+    <pre>
+const arr1 = ['apple','ball','cat']
+
+arr1.forEach((b,c)=>{
+   console.log(c,b)
+})
+    </pre>
+
+    <ul>
+      <li>
+        c → index
+      </li>
+
+      <li>
+        b → value
+      </li>
+    </ul>
+
+
+
+    <h2>Loop on Object</h2>
+
+    <pre>
+const obj = {
+   name:"Reshab",
+   age:28,
+   1:32
+}
+    </pre>
+
+
+
+    <pre>
+for(let i in obj){
+   console.log(typeof i)
+}
+    </pre>
+
+    <ul>
+      <li>
+        In <b>for...in</b>, key datatype is always string.
+      </li>
+
+      <li>
+        In normal for loop, index datatype is number.
+      </li>
+    </ul>
+
+
+
+    <h2>Important Notes</h2>
+
+    <ul>
+      <li>
+        Objects do not have length property like arrays.
+      </li>
+
+      <li>
+        for...of loop does not work directly on normal objects.
+      </li>
+
+      <li>
+        forEach() method works only on arrays.
+      </li>
+    </ul>
+
+  </div>
+
+</div>
 
       <!-- ================= INTERVIEW QUESTIONS ================= -->
 

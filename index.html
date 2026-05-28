@@ -211,64 +211,48 @@
       </div>
       <!-- ================= 23/05/2026 ================= -->
 
-<div class="date-section">
+      <div class="date-section">
+        <div class="date-header">23/05/2026</div>
 
-  <div class="date-header">
-    23/05/2026
-  </div>
+        <div class="content">
+          <h2>Reverse Loop in Array</h2>
 
-  <div class="content">
-
-    <h2>Reverse Loop in Array</h2>
-
-    <pre>
+          <pre>
 for(let i = arr.length; i >= 0; i--){
    console.log(arr[i])
 }
 
 // Output:
 // undefined 5 4 3 2 1
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        Array index starts from 0.
-      </li>
+          <ul>
+            <li>Array index starts from 0.</li>
 
-      <li>
-        arr.length gives one extra position.
-      </li>
+            <li>arr.length gives one extra position.</li>
 
-      <li>
-        That's why first output becomes <b>undefined</b>.
-      </li>
-    </ul>
+            <li>That's why first output becomes <b>undefined</b>.</li>
+          </ul>
 
+          <h2>for...of Loop</h2>
 
-
-    <h2>for...of Loop</h2>
-
-    <pre>
+          <pre>
 const arr = [1,2,3,4,5]
 
 for(let i of arr){
    console.log(i)
 }
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        <b>for...of</b> loop gives values/elements directly.
-      </li>
+          <ul>
+            <li><b>for...of</b> loop gives values/elements directly.</li>
 
-      <li>
-        Mostly used with arrays and strings.
-      </li>
-    </ul>
+            <li>Mostly used with arrays and strings.</li>
+          </ul>
 
-
-
-    <pre>
+          <pre>
 const arr = ['apple','ball','cat']
 
 for(let i of arr){
@@ -277,27 +261,20 @@ for(let i of arr){
 
 // Output:
 // undefined undefined undefined
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        In for...of loop, <b>i</b> already contains value.
-      </li>
+          <ul>
+            <li>In for...of loop, <b>i</b> already contains value.</li>
 
-      <li>
-        Here i = "apple", "ball", "cat"
-      </li>
+            <li>Here i = "apple", "ball", "cat"</li>
 
-      <li>
-        arr["apple"] does not exist, so output becomes undefined.
-      </li>
-    </ul>
+            <li>arr["apple"] does not exist, so output becomes undefined.</li>
+          </ul>
 
+          <h2>for...in Loop</h2>
 
-
-    <h2>for...in Loop</h2>
-
-    <pre>
+          <pre>
 const arr = ['apple','ball','cat']
 
 for(let i in arr){
@@ -305,119 +282,232 @@ for(let i in arr){
    console.log(`Hi, my index is ${i} and my value is ${arr[i]}`)
 
 }
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        <b>for...in</b> loop gives index/key.
-      </li>
+          <ul>
+            <li><b>for...in</b> loop gives index/key.</li>
 
-      <li>
-        Mostly used for objects.
-      </li>
+            <li>Mostly used for objects.</li>
 
-      <li>
-        Template literals use backticks <b>` `</b>.
-      </li>
-    </ul>
+            <li>Template literals use backticks <b>` `</b>.</li>
+          </ul>
 
+          <h2>forEach Method</h2>
 
-
-    <h2>forEach Method</h2>
-
-    <pre>
+          <pre>
 const arr = [1,2,3,4,5]
 
 arr.forEach((a,i)=>{
    console.log(a,i)
 })
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        forEach() is an array method.
-      </li>
+          <ul>
+            <li>forEach() is an array method.</li>
 
-      <li>
-        First parameter gives value.
-      </li>
+            <li>First parameter gives value.</li>
 
-      <li>
-        Second parameter gives index.
-      </li>
-    </ul>
+            <li>Second parameter gives index.</li>
+          </ul>
 
-
-
-    <pre>
+          <pre>
 const arr1 = ['apple','ball','cat']
 
 arr1.forEach((b,c)=>{
    console.log(c,b)
 })
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        c → index
-      </li>
+          <ul>
+            <li>c → index</li>
 
-      <li>
-        b → value
-      </li>
-    </ul>
+            <li>b → value</li>
+          </ul>
 
+          <h2>Loop on Object</h2>
 
-
-    <h2>Loop on Object</h2>
-
-    <pre>
+          <pre>
 const obj = {
    name:"Reshab",
    age:28,
    1:32
 }
-    </pre>
+    </pre
+          >
 
-
-
-    <pre>
+          <pre>
 for(let i in obj){
    console.log(typeof i)
 }
-    </pre>
+    </pre
+          >
 
-    <ul>
-      <li>
-        In <b>for...in</b>, key datatype is always string.
-      </li>
+          <ul>
+            <li>In <b>for...in</b>, key datatype is always string.</li>
 
-      <li>
-        In normal for loop, index datatype is number.
-      </li>
-    </ul>
+            <li>In normal for loop, index datatype is number.</li>
+          </ul>
 
+          <h2>Important Notes</h2>
 
+          <ul>
+            <li>Objects do not have length property like arrays.</li>
 
-    <h2>Important Notes</h2>
+            <li>for...of loop does not work directly on normal objects.</li>
 
-    <ul>
-      <li>
-        Objects do not have length property like arrays.
-      </li>
+            <li>forEach() method works only on arrays.</li>
+          </ul>
+        </div>
+      </div>
 
-      <li>
-        for...of loop does not work directly on normal objects.
-      </li>
+      <!-- ================= 27/05/2026 ================= -->
 
-      <li>
-        forEach() method works only on arrays.
-      </li>
-    </ul>
+      <div class="date-section">
+        <div class="date-header">27/05/2026</div>
 
-  </div>
+        <div class="content">
+          <h2>Functions in JavaScript</h2>
 
-</div>
+          <pre>
+greet()
+
+function greet(){
+    console.log("hello world")
+}
+    </pre
+          >
+
+          <ul>
+            <li>Function declaration can be called before creation.</li>
+            <li>This behavior is called hoisting.</li>
+          </ul>
+
+          <h2>Addition Function</h2>
+
+          <pre>
+function add(a,b){
+    console.log(a+b)
+}
+
+add()
+add(2,4)
+    </pre
+          >
+
+          <ul>
+            <li>If no value is passed, parameters become undefined.</li>
+            <li>undefined + undefined gives NaN.</li>
+            <li>add(2,4) output becomes 6.</li>
+          </ul>
+
+          <h2>Subtraction, Multiplication and Division</h2>
+
+          <pre>
+function sub(a,b){
+    console.log(a-b)
+}
+
+function multi(a,b){
+    console.log(a*b)
+}
+
+function division(a,b){
+    console.log(a/b)
+}
+
+sub(3,1)
+multi(7,8)
+division(5,4)
+    </pre
+          >
+
+          <ul>
+            <li>Functions help reuse code.</li>
+            <li>Parameters receive values during function call.</li>
+          </ul>
+
+          <h2>Check Even or Odd</h2>
+
+          <pre>
+function checkEvenOdd(a){
+
+    if(typeof a === 'number'){
+
+        if(a % 2 === 0){
+            console.log("even")
+        }
+        else if(a % 2 === 1){
+            console.log("odd")
+        }
+        else{
+            console.log("provide number to check")
+        }
+    }
+    else{
+        console.log("provide Datatype as number")
+    }
+}
+
+checkEvenOdd(8)
+checkEvenOdd()
+checkEvenOdd(9,7,10)
+    </pre
+          >
+
+          <ul>
+            <li>typeof is used to check datatype.</li>
+            <li>If datatype is not number, else block will run.</li>
+            <li>Extra arguments are ignored in JavaScript.</li>
+          </ul>
+
+          <h2>Array Even Odd Example</h2>
+
+          <pre>
+function arrEvenOdd(a){
+
+    for(let i of a){
+
+        if(typeof i === 'number'){
+
+            if(i % 2 === 0){
+                console.log(`value is even ${i}`)
+            }
+            else if(i % 2 === 1){
+                console.log(`value is odd ${i}`)
+            }
+
+        }
+        else{
+            console.log(`Datatype is not number => ${i}`)
+        }
+    }
+}
+
+const arr = [0,1,2,3,4,5,true]
+
+arrEvenOdd(arr)
+    </pre
+          >
+
+          <ul>
+            <li>for...of loop gives values directly.</li>
+            <li>typeof checks datatype before operation.</li>
+            <li>true datatype is boolean, not number.</li>
+          </ul>
+
+          <h2>Important Notes</h2>
+
+          <ul>
+            <li>Functions reduce repeated code.</li>
+            <li>NaN means Not a Number.</li>
+            <li>JavaScript ignores extra parameters.</li>
+            <li>Datatype checking prevents unexpected output.</li>
+          </ul>
+        </div>
+      </div>
 
       <!-- ================= INTERVIEW QUESTIONS ================= -->
 

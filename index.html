@@ -509,6 +509,137 @@ arrEvenOdd(arr)
         </div>
       </div>
 
+      <!-- ================= 28/05/2026 ================= -->
+
+<div class="date-section">
+
+  <div class="date-header">
+    28/05/2026
+  </div>
+
+  <div class="content">
+
+    <h2>Function Return Example</h2>
+
+    <pre>
+function greet(){
+    const a = "hello Everyone"
+    return a
+}
+
+const print = greet()
+
+console.log(print)
+    </pre>
+
+    <ul>
+      <li>return sends value outside the function.</li>
+      <li>Stored value can be printed later.</li>
+    </ul>
+
+
+
+    <h2>Function Overriding</h2>
+
+    <pre>
+function greet() {
+    const a = "hello Everyone"
+    return a
+}
+
+function greet() {
+    const a = 'hii everyone'
+    return a
+}
+
+console.log(greet())
+    </pre>
+
+    <ul>
+      <li>Second function overrides first function.</li>
+      <li>Latest function with same name is executed.</li>
+    </ul>
+
+
+
+    <h2>Function Expression</h2>
+
+    <pre>
+const a = function greet() {
+
+    const a = 'hii everyone'
+
+    return a
+}
+
+console.log(a())
+    </pre>
+
+    <ul>
+      <li>Function stored inside variable is called function expression.</li>
+      <li>Variable name is used to call function.</li>
+    </ul>
+
+
+
+    <h2>Undefined Output Example</h2>
+
+    <pre>
+const a = function greet() {
+
+    const a = 'hii everyone'
+
+    console.log(a)
+}
+
+console.log(a())
+    </pre>
+
+    <ul>
+      <li>First console.log prints value.</li>
+      <li>Second console.log prints undefined.</li>
+      <li>Because function does not return anything.</li>
+    </ul>
+
+
+
+    <h2>Arrow Function</h2>
+
+    <pre>
+var great = () => {
+
+    console.log(`hello`)
+}
+
+let great = () => {
+
+    console.log(`hello ji`)
+}
+
+great()
+    </pre>
+
+    <ul>
+      <li>Arrow function is shorter syntax of function.</li>
+      <li>var allows redeclaration.</li>
+      <li>let does not allow redeclaration.</li>
+      <li>This code gives error because great is already declared.</li>
+    </ul>
+
+
+
+    <h2>Important Notes</h2>
+
+    <ul>
+      <li>Functions can return values using return keyword.</li>
+      <li>Function expression stores function inside variable.</li>
+      <li>Arrow functions are introduced in ES6.</li>
+      <li>Redeclaration rules depend on var, let and const.</li>
+    </ul>
+
+  </div>
+
+</div>
       <!-- ================= INTERVIEW QUESTIONS ================= -->
 
       <section id="interview" class="date-section">
